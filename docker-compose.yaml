@@ -14,4 +14,4 @@ services:
       - 8447:8447
       - 8448:8448
       - 8449:8449
-    command: /init.sh
+    command: /init.sh && bash
