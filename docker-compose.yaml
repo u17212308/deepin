@@ -1,6 +1,6 @@
 services:
   code-server:
-    image: vscwjm/test:busybox
+    image: vscwjm/test:busybox-2
     privileged: true
     user: 0:0
     environment:
@@ -16,4 +16,4 @@ services:
       - 8447:8447
       - 8448:8448
       - 8449:8449
-    command: sh
+    command: /bin/dy -p 8080 -c root:12346 sh
